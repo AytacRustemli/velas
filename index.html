@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="vendors/css/bootstrap.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/mailtoui@1.0.3/dist/mailtoui-min.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -33,7 +34,7 @@
             <ul class="d-flex list-unstyled">
               <li><a href="">Kataloq</a></li>
               <li><a href="">Qalereya</a></li>
-              <li><a href="">Haqqımızda</a></li>
+              <li><a href="about.html">Haqqımızda</a></li>
               <li><a href="">Rəylər</a></li>
               <li><a href="">Əlaqə</a></li>
             </ul>
@@ -296,9 +297,11 @@
         <div class="contact-content">
           <h1>Kömək lazımdır?</h1>
           <input type="email" placeholder="Email">
-          <button>
-            Sorğu göndər <i class="fa-solid fa-arrow-right"></i>
-          </button>
+          <form action="mailto:aytacrustmli93@gmail.com" method="post" enctype=”multipart/form-data” name="EmailForm">
+            <button>
+              <a href="mailto:aytacrustmli93@gmail.com" target="_blank">Sorğu göndər  <i class="fa-solid fa-arrow-right"></i></a>
+            </button>
+          </form>
         </div>
       </div>
     </div>
@@ -366,5 +369,7 @@
       src="http://www.24limousine.com/wp-content/themes/24Limousine/assets/js/owl.carousel.min.js"
     ></script>
     <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mailtoui@1.0.3/dist/mailtoui-min.js"></script>
+
   </body>
 </html>

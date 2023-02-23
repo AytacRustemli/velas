@@ -567,6 +567,11 @@
   transition: 0.3s ease-in-out;
 }
 
+#help .test .contact-content button a {
+  text-decoration: none;
+  color: #5b5b5f;
+}
+
 #help .test .contact-content button i {
   margin-left: 10px;
 }
@@ -576,6 +581,9 @@
   border: 1px solid #5b5b5f;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
+}
+
+#help .test .contact-content button:hover a {
   color: white;
 }
 

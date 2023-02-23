@@ -1,0 +1,216 @@
+#header {
+  width: 100%;
+  padding: 20px 0px;
+  #menu-bar {
+    display: none;
+  }
+  label {
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+  }
+  .image {
+    a {
+      font-family: "Hind";
+      font-weight: 400;
+      font-size: 16px;
+      color: #5b6672;
+      text-decoration: none;
+      flex-direction: column;
+    }
+  }
+  .navbar {
+    ul {
+      list-style: none;
+      li {
+        position: relative;
+        float: left;
+        a {
+          text-decoration: none;
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          color: black;
+          margin-left: 20px;
+        }
+        &:hover {
+          ul {
+            display: initial;
+          }
+          i {
+            transform: rotate(180deg);
+            transition: 2s ease;
+          }
+        }
+        ul {
+          position: absolute;
+          left: 0;
+          width: 200px;
+          background-color: #1e1e1e;
+          display: none;
+          li {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .right {
+    margin-top: -20px;
+    ul {
+      list-style: none;
+      li {
+        position: relative;
+        float: left;
+        a {
+          font-size: 20px;
+          padding: 0px;
+          color: black;
+          display: block;
+          cursor: pointer;
+          text-decoration: none;
+        }
+        &:hover {
+          ul {
+            display: initial;
+          }
+          i {
+            transform: rotate(180deg);
+            transition: 2s ease;
+          }
+        }
+        ul {
+          position: absolute;
+          left: 0;
+          // width: 100px;
+          // background-color: #1e1e1e;
+          display: none;
+          li {
+            width: 100%;
+            a {
+              margin-left: -20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#who_we_are {
+  padding: 30px 0px;
+  h4 {
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 46px;
+    color: #000000;
+    margin-bottom: 30px;
+  }
+  p {
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
+    color: #323232;
+  }
+}
+
+#ten_years_with_you {
+  background-color: #f5f5f55e;
+  padding: 20px 0px 50px 0px;
+  .box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    h6 {
+      font-family: "Poppins";
+      font-weight: 500;
+      font-size: 26px;
+      line-height: 39px;
+      text-align: center;
+      color: #2a3546;
+    }
+  }
+}
+
+#we_pay_attention_to_details {
+  padding: 30px 0px;
+  h4 {
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 46px;
+    color: #000000;
+    margin-bottom: 30px;
+  }
+  p {
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
+    color: #323232;
+  }
+}
+
+#tree {
+  padding: 50px 0px;
+  .text {
+    background-color: #f5f5f55e;
+    width: 50%;
+    padding-top: 10rem;
+    h4 {
+      font-family: "Poppins",sans-serif;
+      font-weight: bolder;
+      font-size: 40px;
+      line-height: 60px;
+      color: #2c2c2c;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      margin-bottom: 30px;
+      margin-left: 40px;
+    }
+    p {
+      font-family: "Poppins";
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #2c2c2c;
+      margin-left: 40px;
+    }
+  }
+  .image {
+    width: 50%;
+    height: 959px;
+    background: linear-gradient(
+        291.79deg,
+        rgba(36, 47, 65, 0.77) -6.28%,
+        rgba(36, 47, 65, 0) 121.73%
+      ),
+      url("/image/about6.png");
+  }
+}
+
+#simplicity{
+  padding: 30px 0px;
+  .text{
+    padding: 100px 50px;
+    h4{
+      font-family: 'Poppins';
+      font-weight: 600;
+      font-size: 46px;
+      line-height: 69px;
+      color: #000000;
+    }
+    p{
+      font-family: 'Poppins';
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 29px;
+      color: #323232;
+    }
+
+  }
+}
+
+@import "_responsive.scss";
