@@ -161,7 +161,7 @@
     width: 50%;
     padding-top: 10rem;
     h4 {
-      font-family: "Poppins",sans-serif;
+      font-family: "Poppins", sans-serif;
       font-weight: bolder;
       font-size: 40px;
       line-height: 60px;
@@ -191,25 +191,161 @@
   }
 }
 
-#simplicity{
+#simplicity {
   padding: 30px 0px;
-  .text{
+  .text {
     padding: 100px 50px;
-    h4{
-      font-family: 'Poppins';
+    h4 {
+      font-family: "Poppins";
       font-weight: 600;
       font-size: 46px;
       line-height: 69px;
       color: #000000;
+    }
+    p {
+      font-family: "Poppins";
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 29px;
+      color: #323232;
+    }
+  }
+}
+
+#products {
+  padding: 30px 0px;
+  .owl-carousel .owl-dot,
+  .owl-carousel .owl-nav .owl-next,
+  .owl-carousel .owl-nav .owl-prev {
+    display: none;
+  }
+
+  .custome_slide.owl-carousel .owl-item {
+    transform: scale(0.7);
+    transition: all 0.5s;
+  }
+  h4 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    color: #000000;
+  }
+  .box {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: #f9fcff;
+    width: 360px;
+    height: 300px;
+    padding: 2rem;
+    img {
+      width: 100%;
+      cursor: pointer;
+      transition: 0.3s ease-in-out;
+    }
+    p {
+      font-family: "Poppins";
+      font-weight: 400;
+      font-size: 25px;
+      margin-top: -20px;
+      color: #8f8f8f;
+      opacity: 0;
+      transition: 0.3s ease-in-out;
+    }
+    &:hover {
+      img {
+        transform: scale(1.2);
+      }
+      p {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+#news{
+  padding: 30px 0px;
+  h4{
+    font-family: 'Poppins',sans-serif;
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 69px;
+    color: #000000;
+  }
+  .box{
+    padding-top: 20px;
+    h6{
+      font-family: 'Poppins';
+      margin-top: 10px;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 27px;
+      color: #2F2F2F;
     }
     p{
       font-family: 'Poppins';
       font-weight: 400;
       font-size: 18px;
       line-height: 29px;
-      color: #323232;
+      color: #818181;
     }
+  }
+}
 
+#need{
+  background-color: #f5f5f55e;
+  .text{
+    width: 50%;
+    padding: 30px;
+    h4{
+      font-family: 'Poppins';
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 54px;
+      color: #000000;
+    }
+  }
+  .image {
+    width: 50%;
+    height: 694.64px;
+    background: url("/image/aboutneed.png");
+  }
+}
+
+#footer {
+  background-color: #353e4f;
+  width: 100%;
+  padding: 30px 0px;
+  .text {
+    color: white;
+    h4 {
+      font-family: "Poppins", sans-serif;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 36px;
+    }
+    ul {
+      li {
+        font-family: "Poppins";
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 36px;
+        cursor: pointer;
+      }
+    }
+  }
+  h6 {
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #ffffff;
+  }
+  .icon {
+    i {
+      color: white;
+      font-size: 24px;
+      cursor: pointer;
+      margin-left: 15px;
+    }
   }
 }
 
