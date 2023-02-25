@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="vendors/css/bootstrap.css" />
-    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <script src="https://cdn.jsdelivr.net/npm/mailtoui@1.0.3/dist/mailtoui-min.js"></script>
     <link
       rel="stylesheet"
@@ -24,7 +24,7 @@
   </head>
   <body>
     <!-- header start -->
-    <div id="header">
+    <div id="headeer">
       <div class="container">
         <div class="d-flex justify-content-between align-items-center">
           <input type="checkbox" id="menu-bar" />
@@ -40,8 +40,8 @@
               <li><a href="">Kataloq</a></li>
               <li><a href="about.html">Qalereya</a></li>
               <li><a href="">Haqqımızda</a></li>
-              <li><a href="">Rəylər</a></li>
-              <li><a href="">Əlaqə</a></li>
+              <li><a href="index.html#reviews">Rəylər</a></li>
+              <li><a href="contact.html">Əlaqə</a></li>
             </ul>
           </nav>
           <div class="right">
@@ -253,11 +253,18 @@
         <div class="text">
           <div class="container">
             <h4>Köməyə ehtiyacınız var?</h4>
+            <div class="box">
+              <form action="mailto:aytacrustmli93@gmail.com" method="post" enctype=”multipart/form-data” name="EmailForm">
+                <input class="fullName" type="text" placeholder="Ad" name="full"> <br> <br>
+                <input class="fullName" type="text" placeholder="Soyad"> <br> <br>
+                <button>
+                  <a href="mailto:aytacrustmli93@gmail.com">Göndər  <i class="fa-solid fa-arrow-right"></i></a>
+                </button>
+              </form>
+            </div>
           </div>
         </div>
-        <div class="image">
-          
-        </div>
+        <div class="image"></div>
       </div>
     </div>
     <!-- section8 end -->
