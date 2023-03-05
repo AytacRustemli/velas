@@ -39,6 +39,7 @@ google.maps.event.addDomListener(window, 'load', initMap);
 
 
 function changeLanguage(language) {
+  // indexlang
   const aboutEl = document.querySelector("#about");
   aboutEl.lang = language;
   const aboutTextEl = aboutEl.querySelector("h4");
@@ -122,7 +123,7 @@ function changeLanguage(language) {
 
   const rightsEl = document.querySelector("#footer h6");
   rightsEl.textContent = `© ${translations[language].privacyTermsMap}`;
-} 
+}
 
 const languageLinks = document.querySelectorAll("#language-selector a");
 languageLinks.forEach((link) => {
@@ -130,5 +131,145 @@ languageLinks.forEach((link) => {
     event.preventDefault();
     const language = event.target.textContent.toLowerCase();
     changeLanguage(language);
+  });
+});
+
+function changeeLanguage(language) {
+  // aboutlang
+  const whoEl = document.querySelector("#who_we_are");
+  whoEl.lang = language;
+  const whoTextEl = whoEl.querySelector("h4");
+  whoTextEl.textContent = translatio[language].who;
+
+  const ilEl = document.querySelector("#ten_years_with_you h6:first-of-type");
+  ilEl.textContent = translatio[language].il;
+
+  const daimEl = document.querySelectorAll("#ten_years_with_you h6")[1];
+  daimEl.textContent = translatio[language].daim;
+
+  const mebelEl = document.querySelectorAll("#ten_years_with_you h6")[2];
+  mebelEl.textContent = translatio[language].mebel;
+
+  const payEl = document.querySelector("#we_pay_attention_to_details");
+  payEl.lang = language;
+  const payTextEl = payEl.querySelector("h4");
+  payTextEl.textContent = translatio[language].onem;
+
+  const treeEl = document.querySelector("#tree");
+  treeEl.lang = language;
+  const treeTextEl = treeEl.querySelector("h4");
+  treeTextEl.textContent = translatio[language].use;
+
+  const simpEl = document.querySelector("#simplicity");
+  simpEl.lang = language;
+  const simpTextEl = simpEl.querySelector("h4");
+  simpTextEl.textContent = translatio[language].simp;
+
+  const productEl = document.querySelector("#products");
+  productEl.lang = language;
+  const productTextEl = productEl.querySelector("h4");
+  productTextEl.textContent = translatio[language].mehsul;
+  const divaTextEl = productEl.querySelectorAll("p");
+  for (let i = 0; i < divaTextEl.length; i++) {
+    divaTextEl[i].textContent = translatio[language].diva;
+  }
+
+  const newEl = document.querySelector("#news");
+  newEl.lang = language;
+  const newTextEl = newEl.querySelector("h4");
+  newTextEl.textContent = translatio[language].new;
+
+  const salEl = document.querySelector("#news h6:first-of-type");
+  salEl.textContent = translatio[language].sale;
+
+  const yeniEl = document.querySelectorAll("#news h6")[1];
+  yeniEl.textContent = translatio[language].yeni;
+
+  const saleEl = document.querySelectorAll("#news h6")[2];
+  saleEl.textContent = translatio[language].sale;
+
+  const needEl = document.querySelector("#need");
+  needEl.lang = language;
+  const needTextEl = needEl.querySelector("h4");
+  needTextEl.textContent = translatio[language].need;
+  const butonTextEl = needEl.querySelector("button");
+  butonTextEl.textContent = translatio[language].gonder;
+  
+  const abouttEl = document.querySelector("#footer h4:first-of-type");
+  abouttEl.textContent = translatio[language].about;
+  const aboutListEls = document.querySelectorAll("#footer ul:first-of-type li");
+  aboutListEls[0].textContent = translatio[language].terms;
+  aboutListEls[1].textContent = translatio[language].privacy;
+  aboutListEls[2].textContent = translatio[language].cookies;
+
+  const supportEl = document.querySelectorAll("#footer h4")[1];
+  supportEl.textContent = translatio[language].support;
+  const supportListEls = document.querySelectorAll("#footer ul")[1].querySelectorAll("li");
+  supportListEls[0].textContent = translatio[language].support;
+  supportListEls[1].textContent = translatio[language].faq;
+  supportListEls[2].textContent = translatio[language].rules;
+
+  const contactEl = document.querySelectorAll("#footer h4")[2];
+  contactEl.textContent = translatio[language].contact;
+  const contactListEls = document.querySelectorAll("#footer ul")[2].querySelectorAll("li");
+  contactListEls[0].textContent = translatio[language].email;
+  contactListEls[1].textContent = translatio[language].phone;
+  contactListEls[2].textContent = translatio[language].address;
+
+  const rightsEl = document.querySelector("#footer h6");
+  rightsEl.textContent = `© ${translatio[language].privacyTermsMap}`;
+}
+
+const languageeLinks = document.querySelectorAll("#language-selector a");
+languageeLinks.forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+    const language = event.target.textContent.toLowerCase();
+    changeeLanguage(language);
+  });
+});
+
+function changgeLanguage(language) {
+  // contactlang
+  const contacEl = document.querySelector("#contactus");
+  contacEl.lang = language;
+  const contacTextEl = contacEl.querySelector("h4");
+  contacTextEl.textContent = tercume[language].who;
+  const buttonTextEl = contacEl.querySelector("button");
+  buttonTextEl.textContent = tercume[language].gonder;
+  const izleTextEl = contacEl.querySelector("h5");
+  izleTextEl.textContent = tercume[language].izle;
+
+  const abouttEl = document.querySelector("#footer h4:first-of-type");
+  abouttEl.textContent = tercume[language].about;
+  const aboutListEls = document.querySelectorAll("#footer ul:first-of-type li");
+  aboutListEls[0].textContent = tercume[language].terms;
+  aboutListEls[1].textContent = tercume[language].privacy;
+  aboutListEls[2].textContent = tercume[language].cookies;
+
+  const supportEl = document.querySelectorAll("#footer h4")[1];
+  supportEl.textContent = tercume[language].support;
+  const supportListEls = document.querySelectorAll("#footer ul")[1].querySelectorAll("li");
+  supportListEls[0].textContent = tercume[language].support;
+  supportListEls[1].textContent = tercume[language].faq;
+  supportListEls[2].textContent = tercume[language].rules;
+
+  const contactEl = document.querySelectorAll("#footer h4")[2];
+  contactEl.textContent = tercume[language].contact;
+  const contactListEls = document.querySelectorAll("#footer ul")[2].querySelectorAll("li");
+  contactListEls[0].textContent = tercume[language].email;
+  contactListEls[1].textContent = tercume[language].phone;
+  contactListEls[2].textContent = tercume[language].address;
+
+  const rightsEl = document.querySelector("#footer h6");
+  rightsEl.textContent = `© ${tercume[language].privacyTermsMap}`;
+}
+
+const languaggeLinks = document.querySelectorAll("#language-selector a");
+languaggeLinks.forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+    const language = event.target.textContent.toLowerCase();
+    changgeLanguage(language);
   });
 });

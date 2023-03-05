@@ -24,7 +24,7 @@ const translations = {
     email : "email@gmail.com",
     phone : "Phone Number",
     address : "Address",
-    privacyTermsMap : "All rights reserved",
+    privacyTermsMap : "Privacy · Terms · Map",
   },
   aze: {
     about: "Haqqımızda",
@@ -51,7 +51,7 @@ const translations = {
     email : "mail@gmail.com",
     phone : "Telefon nömrəsi",
     address : "Adres",
-    privacyTermsMap : "Privacy · Terms · Map"
+    privacyTermsMap : "Gizlilik · Şərtlər · Xəritə"
   },
   ru: {
     about: "О нас",

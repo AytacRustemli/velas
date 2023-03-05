@@ -47,10 +47,13 @@
           <div class="right">
             <ul>
               <li>
-                <a href="#">aze <i class="fas fa-caret-down down"></i> </a>
+                <a href="#aze" onclick="changgeLanguage('aze')">aze <i class="fas fa-caret-down down"></i> </a>
                 <ul>
-                  <li><a href="#">en</a></li>
-                  <li><a href="#">rus</a></li>
+                  <div id="language-selector">
+                    <li><a href="#aze" onclick="changgeLanguage('aze')">aze</a></li>
+                    <li><a href="#en" onclick="changgeLanguage('en')">en</a></li>
+                    <li><a href="#ru" onclick="changgeLanguage('ru')">rus</a></li>
+                  </div>
                 </ul>
               </li>
             </ul>
@@ -169,6 +172,7 @@
       src="http://www.24limousine.com/wp-content/themes/24Limousine/assets/js/owl.carousel.min.js"
     ></script>
     <script src="js/main.js"></script>
+    <script src="js/contactlang.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/mailtoui@1.0.3/dist/mailtoui-min.js"></script>
   </body>
 </html>
