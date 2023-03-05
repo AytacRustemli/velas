@@ -32,8 +32,11 @@
   #menu-bar:checked ~ .navbar {
     display: initial;
   }
+  #header img{
+    width: 200px;
+  }
   .right{
-    display: none;
+    display: block;
   }
   #specialfurniture {
     img {

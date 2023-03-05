@@ -1,0 +1,120 @@
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 800px) {
+    #headeer label {
+        display: initial;
+
+        i {
+            font-size: 30px;
+            margin-top: 30px;
+        }
+    }
+    #headeer .navbar {
+        position: absolute;
+        top: 25%;
+        left: 0;
+        right: 0;
+        background-color: rgba(2, 22, 55, 0.64);
+        display: none;
+        z-index: 1111111;
+
+        // height: 50vh;
+        ul {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    #headeer .navbar ul li {
+        width: 100%;
+        padding: 20px;
+    }
+    #headeer .navbar ul li ul {
+        width: 100%;
+        position: relative;
+    }
+    #menu-bar:checked~.navbar {
+        display: initial;
+    }
+    #headeer img {
+        width: 200px;
+    }
+    .right {
+        display: block;
+    }
+    #who_we_are {
+        img {
+            width: 100%;
+        }
+    }
+    #ten_years_with_you {
+        .box {
+            display: flex;
+            flex-direction: column;
+
+            .box1 {
+                h6 {
+                    text-align: center;
+                }
+            }
+        }
+    }
+    #we_pay_attention_to_details {
+        img {
+            width: 100%;
+        }
+    }
+    #tree {
+        display: flex;
+        flex-direction: column;
+
+        .text {
+            background-color: #f5f5f55e;
+            width: 100%;
+            padding-top: 0rem;
+        }
+
+        .image {
+            width: 100%;
+            display: none;
+        }
+    }
+    #simplicity {
+        img {
+            width: 100%;
+        }
+
+        .text {
+            padding: 50px 20px;
+        }
+    }
+    #need {
+        .text {
+            width: 100%;
+
+            .box {
+                padding-top: 30px;
+
+                input {
+                    width: 100%;
+                }
+            }
+        }
+
+        .image {
+            display: none;
+        }
+    }
+    #footer {
+        .text {
+            margin-top: 10px;
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 576px) and (max-width: 768px) {}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 768px) and (max-width: 992px) {}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (max-width: 1200px) {}
