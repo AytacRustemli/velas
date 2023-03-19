@@ -1,8 +1,9 @@
-const tercume = {
+const tercuume = {
     en: {
-        who : "Contact us",
-        izle : "Follow us",
-        gonder : "Send",
+        hamisi : "All",
+        stul: "Chair",
+        qapi: "Door",
+        divan: "Sofa",
         about: "About Us",
         terms: "Terms and Conditions",
         privacy : "Privacy Policy",
@@ -17,9 +18,10 @@ const tercume = {
         privacyTermsMap : "Privacy · Terms · Map",
     },
     aze: {
-      who : "Bizimlə əlaqə",
-      izle : "Bizi izləyin",
-      gonder : "Göndər",
+      hamisi : "Hamısı",
+      stul: "Stul",
+      qapi: "Qapı",
+      divan: "Divan",
       about: "Haqqımızda",
       terms : "Şərtlər və qaydalar",
       privacy : "Məxfilik siyasəti",
@@ -34,9 +36,10 @@ const tercume = {
       privacyTermsMap : "Gizlilik · Şərtlər · Xəritə"
     },
     ru: {
-        who : "Связаться с нами",
-        izle : "Подписывайтесь на нас",
-        gonder : "Отправить",
+        hamisi : "Все",
+        stul: "Стuл",
+        qapi: "Дверь",
+        divan: "Диван",
         about: "О нас",
         terms : "Условия и положения",
         privacy : "Политика конфиденциальности",

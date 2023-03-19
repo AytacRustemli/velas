@@ -273,3 +273,46 @@ languaggeLinks.forEach((link) => {
     changgeLanguage(language);
   });
 });
+
+function changegalleryLanguage(language) {
+  // gallerylang
+  const galleryEl = document.querySelector("#buttons")
+  const hamisiEl = galleryEl.querySelectorAll("button");
+  hamisiEl[0].textContent = tercuume[language].hamisi;
+  hamisiEl[1].textContent = tercuume[language].stul;
+  hamisiEl[2].textContent = tercuume[language].qapi;
+  hamisiEl[3].textContent = tercuume[language].divan;
+  
+  const abouttEl = document.querySelector("#footer h4:first-of-type");
+  abouttEl.textContent = tercuume[language].about;
+  const aboutListEls = document.querySelectorAll("#footer ul:first-of-type li");
+  aboutListEls[0].textContent = tercuume[language].terms;
+  aboutListEls[1].textContent = tercuume[language].privacy;
+  aboutListEls[2].textContent = tercuume[language].cookies;
+
+  const supportEl = document.querySelectorAll("#footer h4")[1];
+  supportEl.textContent = tercuume[language].support;
+  const supportListEls = document.querySelectorAll("#footer ul")[1].querySelectorAll("li");
+  supportListEls[0].textContent = tercuume[language].support;
+  supportListEls[1].textContent = tercuume[language].faq;
+  supportListEls[2].textContent = tercuume[language].rules;
+
+  const contactEl = document.querySelectorAll("#footer h4")[2];
+  contactEl.textContent = tercuume[language].contact;
+  const contactListEls = document.querySelectorAll("#footer ul")[2].querySelectorAll("li");
+  contactListEls[0].textContent = tercuume[language].email;
+  contactListEls[1].textContent = tercuume[language].phone;
+  contactListEls[2].textContent = tercuume[language].address;
+
+  const rightsEl = document.querySelector("#footer h6");
+  rightsEl.textContent = `© ${tercuume[language].privacyTermsMap}`;
+}
+
+const languagegalleryLinks = document.querySelectorAll("#language-selector a");
+languagegalleryLinks.forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+    const language = event.target.textContent.toLowerCase();
+    changegalleryLanguage(language);
+  });
+});

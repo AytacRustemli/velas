@@ -184,11 +184,19 @@
       margin-top: 20px;
       transition: 0.3s ease-in-out;
       cursor: pointer;
+      a{
+        text-decoration: none;
+        color: black;
+      }
       &:hover {
         background-color: #5b5b5f;
         border: 1px solid #5b5b5f;
         color: white;
         transition: 0.3s ease-in-out;
+        a{
+          color: white;
+          transition: 0.3s ease-in-out;
+        }
       }
     }
   }
@@ -323,11 +331,19 @@
       margin-top: 20px;
       transition: 0.3s ease-in-out;
       cursor: pointer;
+      a{
+        text-decoration: none;
+        color: black;
+      }
       &:hover {
         background-color: #5b5b5f;
         border: 1px solid #5b5b5f;
         color: white;
         transition: 0.3s ease-in-out;
+        a{
+          color: white;
+          transition: 0.3s ease-in-out;
+        }
       }
     }
   }
@@ -544,4 +560,5 @@
 
 @import "_about.scss";
 @import "_contact.scss";
+@import "_gallery.scss";
 @import "_responsive.scss";
