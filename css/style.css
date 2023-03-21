@@ -1510,6 +1510,302 @@
 }
 
 @media (max-width: 800px) {
+  #headergallery label {
+    display: initial;
+  }
+  #headergallery label i {
+    font-size: 30px;
+    margin-top: 30px;
+  }
+  #headergallery .navbar {
+    position: absolute;
+    top: 25%;
+    left: 0;
+    right: 0;
+    background-color: rgba(2, 22, 55, 0.64);
+    display: none;
+    z-index: 1111111;
+  }
+  #headergallery .navbar ul {
+    display: flex;
+    flex-direction: column;
+  }
+  #headergallery .navbar ul li {
+    width: 100%;
+    padding: 20px;
+  }
+  #headergallery .navbar ul li ul {
+    width: 100%;
+    position: relative;
+  }
+  #menu-bar:checked ~ .navbar {
+    display: initial;
+  }
+  #headergallery img {
+    width: 200px;
+  }
+  .right {
+    display: block;
+  }
+  #wrapper #buttons .button-value {
+    padding: 1.2em;
+  }
+  #wrapper #products {
+    grid-column-gap: 10px;
+    padding: 10px;
+  }
+  #wrapper #products .card {
+    margin-top: 10px;
+    padding: 10px;
+  }
+  #wrapper #products .card .image-container {
+    text-align: center;
+  }
+  #wrapper #products .card .image-container img {
+    max-width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    height: 6em;
+  }
+  #footer .text {
+    margin-top: 10px;
+  }
+}
+#headercatalog {
+  width: 100%;
+  padding: 20px 0px;
+}
+#headercatalog #menu-bar {
+  display: none;
+}
+#headercatalog label {
+  font-size: 20px;
+  color: black;
+  cursor: pointer;
+  display: none;
+}
+#headercatalog .image a {
+  font-family: "Hind";
+  font-weight: 400;
+  font-size: 16px;
+  color: #5b6672;
+  text-decoration: none;
+  flex-direction: column;
+}
+#headercatalog .navbar ul {
+  list-style: none;
+}
+#headercatalog .navbar ul li {
+  position: relative;
+  float: left;
+}
+#headercatalog .navbar ul li a {
+  text-decoration: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: black;
+  margin-left: 20px;
+}
+#headercatalog .navbar ul li:hover ul {
+  display: initial;
+}
+#headercatalog .navbar ul li:hover i {
+  transform: rotate(180deg);
+  transition: 2s ease;
+}
+#headercatalog .navbar ul li ul {
+  position: absolute;
+  left: 0;
+  width: 200px;
+  background-color: #1e1e1e;
+  display: none;
+}
+#headercatalog .navbar ul li ul li {
+  width: 100%;
+}
+#headercatalog .right {
+  margin-top: -20px;
+}
+#headercatalog .right ul {
+  list-style: none;
+}
+#headercatalog .right ul li {
+  position: relative;
+  float: left;
+}
+#headercatalog .right ul li a {
+  font-size: 20px;
+  padding: 0px;
+  color: black;
+  display: block;
+  cursor: pointer;
+  text-decoration: none;
+}
+#headercatalog .right ul li:hover ul {
+  display: initial;
+}
+#headercatalog .right ul li:hover i {
+  transform: rotate(180deg);
+  transition: 2s ease;
+}
+#headercatalog .right ul li ul {
+  position: absolute;
+  left: 0;
+  display: none;
+}
+#headercatalog .right ul li ul li {
+  width: 100%;
+}
+#headercatalog .right ul li ul li a {
+  margin-left: -20px;
+}
+
+#deneme #search-container {
+  text-align: center;
+}
+#deneme #search-container input {
+  width: 400px;
+  height: 52px;
+  border: none;
+  outline: none;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  padding-left: 20px;
+}
+#deneme #search-container input::-moz-placeholder {
+  font-family: "Poppins", sans-serif;
+}
+#deneme #search-container input::placeholder {
+  font-family: "Poppins", sans-serif;
+}
+#deneme #search-container i {
+  background-color: #363F50;
+  width: 79px;
+  border-radius: 8px;
+  padding: 18px;
+  color: white;
+}
+#deneme #products {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 1.5em;
+  padding: 2em 0;
+}
+#deneme #products .image-container img {
+  max-width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 15em;
+}
+#deneme #products .container {
+  padding-top: 1em;
+}
+#deneme #products .container h5 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  color: #787878;
+}
+#deneme #products .hide {
+  display: none;
+}
+
+#footer {
+  background-color: #353e4f;
+  width: 100%;
+  padding: 30px 0px;
+}
+#footer .text {
+  color: white;
+}
+#footer .text h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+}
+#footer .text ul li {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 36px;
+  cursor: pointer;
+}
+#footer h6 {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+#footer .icon i {
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+@media (max-width: 800px) {
+  #headercatalog label {
+    display: initial;
+  }
+  #headercatalog label i {
+    font-size: 30px;
+    margin-top: 30px;
+  }
+  #headercatalog .navbar {
+    position: absolute;
+    top: 25%;
+    left: 0;
+    right: 0;
+    background-color: rgba(2, 22, 55, 0.64);
+    display: none;
+    z-index: 1111111;
+  }
+  #headercatalog .navbar ul {
+    display: flex;
+    flex-direction: column;
+  }
+  #headercatalog .navbar ul li {
+    width: 100%;
+    padding: 20px;
+  }
+  #headercatalog .navbar ul li ul {
+    width: 100%;
+    position: relative;
+  }
+  #menu-bar:checked ~ .navbar {
+    display: initial;
+  }
+  #headercatalog img {
+    width: 200px;
+  }
+  .right {
+    display: block;
+  }
+  #deneme #search-container {
+    text-align: start;
+    display: flex;
+  }
+  #deneme #search-container input {
+    width: 300px;
+  }
+  #deneme #products {
+    grid-column-gap: 1em;
+    padding: 10px 0;
+  }
+  #deneme #products .image-container img {
+    height: 7em;
+  }
+  #footer .text {
+    margin-top: 10px;
+  }
+}
+@media (max-width: 800px) {
   #header label {
     display: initial;
   }

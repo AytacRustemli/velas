@@ -316,3 +316,39 @@ languagegalleryLinks.forEach((link) => {
     changegalleryLanguage(language);
   });
 });
+
+function changecatalogLanguage(language) {
+  // cataloglang
+  const abouttEl = document.querySelector("#footer h4:first-of-type");
+  abouttEl.textContent = tercumet[language].about;
+  const aboutListEls = document.querySelectorAll("#footer ul:first-of-type li");
+  aboutListEls[0].textContent = tercumet[language].terms;
+  aboutListEls[1].textContent = tercumet[language].privacy;
+  aboutListEls[2].textContent = tercumet[language].cookies;
+
+  const supportEl = document.querySelectorAll("#footer h4")[1];
+  supportEl.textContent = tercumet[language].support;
+  const supportListEls = document.querySelectorAll("#footer ul")[1].querySelectorAll("li");
+  supportListEls[0].textContent = tercumet[language].support;
+  supportListEls[1].textContent = tercumet[language].faq;
+  supportListEls[2].textContent = tercumet[language].rules;
+
+  const contactEl = document.querySelectorAll("#footer h4")[2];
+  contactEl.textContent = tercumet[language].contact;
+  const contactListEls = document.querySelectorAll("#footer ul")[2].querySelectorAll("li");
+  contactListEls[0].textContent = tercumet[language].email;
+  contactListEls[1].textContent = tercumet[language].phone;
+  contactListEls[2].textContent = tercumet[language].address;
+
+  const rightsEl = document.querySelector("#footer h6");
+  rightsEl.textContent = `© ${tercumet[language].privacyTermsMap}`;
+}
+
+const languagecatalogLinks = document.querySelectorAll("#language-selector a");
+languagecatalogLinks.forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+    const language = event.target.textContent.toLowerCase();
+    changecatalogLanguage(language);
+  });
+});
