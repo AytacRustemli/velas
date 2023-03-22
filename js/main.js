@@ -352,3 +352,71 @@ languagecatalogLinks.forEach((link) => {
     changecatalogLanguage(language);
   });
 });
+
+function changeproductdetailLanguage(language) {
+  // productdetaillang
+  const detailEl = document.querySelector("#detail");
+  detailEl.lang = language;
+  const detailTextEl = detailEl.querySelector("h4");
+  detailTextEl.textContent = perevod[language].divan;
+  const h5El = detailEl.querySelector("h5");
+  h5El.textContent = perevod[language].reng;
+  const h3El = detailEl.querySelector("h3");
+  h3El.textContent = perevod[language].olcu;
+  
+  const colorEl = document.querySelector("#detail p:first-of-type");
+  colorEl.textContent = perevod[language].lorem;
+  const colorrEl = document.querySelectorAll("#detail p")[1];
+  colorrEl.textContent = perevod[language].hundurluk;
+  const color1El = document.querySelectorAll("#detail p")[2];
+  color1El.textContent = perevod[language].genis;
+  const color2El = document.querySelectorAll("#detail p")[3];
+  color2El.textContent = perevod[language].derin;
+  const color3El = document.querySelectorAll("#detail p")[4];
+  color3El.textContent = perevod[language].otur;
+  const color4El = document.querySelectorAll("#detail p")[5];
+  color4El.textContent = perevod[language].maks;
+  
+  const yumEl = document.querySelector("#elastic");
+  yumEl.lang = language;
+  const yumTextEl = yumEl.querySelector("h4");
+  yumTextEl.textContent = perevod[language].yumsaq;
+
+  const elaqeEl = document.querySelector("#relatedproduct");
+  elaqeEl.lang = language;
+  const elaqeTextEl = elaqeEl.querySelector("h4");
+  elaqeTextEl.textContent = perevod[language].elaqe;
+
+  const abouttEl = document.querySelector("#footer h4:first-of-type");
+  abouttEl.textContent = perevod[language].about;
+  const aboutListEls = document.querySelectorAll("#footer ul:first-of-type li");
+  aboutListEls[0].textContent = perevod[language].terms;
+  aboutListEls[1].textContent = perevod[language].privacy;
+  aboutListEls[2].textContent = perevod[language].cookies;
+
+  const supportEl = document.querySelectorAll("#footer h4")[1];
+  supportEl.textContent = perevod[language].support;
+  const supportListEls = document.querySelectorAll("#footer ul")[1].querySelectorAll("li");
+  supportListEls[0].textContent = perevod[language].support;
+  supportListEls[1].textContent = perevod[language].faq;
+  supportListEls[2].textContent = perevod[language].rules;
+
+  const contactEl = document.querySelectorAll("#footer h4")[2];
+  contactEl.textContent = perevod[language].contact;
+  const contactListEls = document.querySelectorAll("#footer ul")[2].querySelectorAll("li");
+  contactListEls[0].textContent = perevod[language].email;
+  contactListEls[1].textContent = perevod[language].phone;
+  contactListEls[2].textContent = perevod[language].address;
+
+  const rightsEl = document.querySelector("#footer h6");
+  rightsEl.textContent = `© ${perevod[language].privacyTermsMap}`;
+}
+
+const languagedetailLinks = document.querySelectorAll("#language-selector a");
+languagedetailLinks.forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+    const language = event.target.textContent.toLowerCase();
+    changeproductdetailLanguage(language);
+  });
+});

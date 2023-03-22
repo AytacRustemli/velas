@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="vendors/css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/mailtoui@1.0.3/dist/mailtoui-min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://www.24limousine.com/wp-content/themes/24Limousine/assets/css/owl.carousel.min.css"
+    />
+</head>
+<body>
+    <!-- header start -->
+    <div id="headerdetail">
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-center">
+            <input type="checkbox" id="menu-bar" />
+            <label for="menu-bar"><i class="fa-solid fa-bars"></i></label>
+            <div class="image">
+              <img src="image/blacklogo.png" alt="" /> <br />
+              <a style="margin-left: 45px" href="index.html">Ana səhifə</a>
+              <i class="fa-solid fa-angle-right"></i>
+              <a href="#">Məhsul Detail</a>
+            </div>
+            <nav class="navbar">
+              <ul class="d-flex list-unstyled">
+                <li><a href="catalog.html">Kataloq</a></li>
+                <li><a href="gallery.html">Qalereya</a></li>
+                <li><a href="about.html">Haqqımızda</a></li>
+                <li><a href="index.html#reviews">Rəylər</a></li>
+                <li><a href="contact.html">Əlaqə</a></li>
+              </ul>
+            </nav>
+            <div class="right">
+              <ul>
+                <li>
+                  <a href="#aze" onclick="changeproductdetailLanguage('aze')">aze <i class="fas fa-caret-down down"></i> </a>
+                  <ul>
+                    <div id="language-selector">
+                      <li><a href="#aze" onclick="changeproductdetailLanguage('aze')">aze</a></li>
+                      <li><a href="#en" onclick="changeproductdetailLanguage('en')">en</a></li>
+                      <li><a href="#ru" onclick="changeproductdetailLanguage('ru')">rus</a></li>
+                    </div>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- header end -->
+
+    <!-- section1 start -->
+    <div id="detail">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="image">
+                        <img src="/image/detail1.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="cassette">
+                        <h4>Cassette Divan</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur. Leo aliquet tincidunt dui a in. Varius tellus amet ut viverra velit lacus parturient justo. Quis et massa et duis malesuada urna libero et nunc. Non massa faucibus etiam pretium ut adipiscing lacus. </p>
+                        <div class="d-flex align-items-center">
+                            <div class="text">
+                                <h5>Rənglər</h5>
+                            </div>
+                            <div class="color">
+                                <button id="blue"></button>
+                                <button id="orange"></button>
+                                <button id="gray"></button>
+                                <button id="brown"></button>
+                                <button id="pink"></button>
+                                <button id="black"></button>
+                                <button id="grey"></button>
+                                <button id="green"></button>
+                            </div>
+                        </div>
+                        <h3>Ölçü və Çəki</h3>
+                        <p>Hündürlük : 82/400 sm </p>
+                        <p>Genişlik : 80 sm  </p>
+                        <p>Dərinlik : 95 sm </p>
+                        <p>Oturma hündürlüyü : 120 sm </p>
+                        <p>Maksimum çəki yükü : 95 sm </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- section1 end -->
+
+    <!-- section2 start -->
+    <div id="elastic">
+        <div class="d-flex">
+            <div class="col-lg-4">
+                <div class="image">
+                    <div class="container">
+                        <img src="/image/detail2.png" alt="">
+                        <i class="fa-solid fa-plus plus1"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="tree">
+                    <div class="d-flex">
+                        <img src="/image/detil3.png" alt="">
+                        <div class="textt">
+                            <h4 class="h4">Yumşaq vatka</h4>
+                            <p class="p">Lorem ipsum dolor sit amet consectetur. Leo aliquet tincidunt dui a in. ipsum dolor sit amet consectetur</p>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-plus plus2"></i>
+                    <i class="fa-solid fa-plus plus3"></i>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+    <!-- section2 end -->
+
+    <!-- section3 start -->
+    <div id="relatedproduct">
+        <div class="container">
+          <h4>Əlaqəli məhsullar</h4>
+        </div>
+        <div class="owl-carousel custome_slide" id="slide-testimonal">
+          <div class="box">
+            <img src="/image/detail4.png" alt="" />
+            <p>Betty stul</p>
+          </div>
+          <div class="box">
+            <img src="/image/detail5.png" alt="" />
+            <p>Baixo divan</p>
+          </div>
+  
+          <div class="box">
+            <img src="/image/detail6.png" alt="" />
+            <p>Landon divan</p>
+          </div>
+        </div>
+    </div>
+    <!-- section3 end -->
+    
+    <!-- footer start -->
+    <div id="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3">
+              <img width="200px" src="/image/image2.png" alt="">
+            </div>
+            <div class="col-lg-3">
+              <div class="text">
+                <h4>Haqqımızda</h4>
+                <ul class="list-unstyled">
+                  <li>Şərtlər və qaydalar</li>
+                  <li>Məxfilik siyasəti</li>
+                  <li>Çərəzlər</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="text">
+                <h4>Dəstək</h4>
+                <ul class="list-unstyled">
+                  <li>Dəstək</li>
+                  <li>Tez-tez verilən suallar</li>
+                  <li>İstifadə qaydaları</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="text">
+                <h4>Əlaqə</h4>
+                <ul class="list-unstyled">
+                  <li>mail@gmail.com</li>
+                  <li>Telefon nömrəsi</li>
+                  <li>Adres</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr style="color: white;">
+        <div class="container">
+          <div class="d-flex justify-content-between">
+            <h6>© 2022  Gizlilik · Şərtlər · Xəritə</h6>
+            <div class="icon">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- footer end -->
+
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="http://www.24limousine.com/wp-content/themes/24Limousine/assets/js/owl.carousel.min.js"
+    ></script>
+    <script src="js/productdetail.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/productdetaillang.js"></script>
+</body>
+</html>

@@ -396,6 +396,10 @@
         transition: 0.3s ease-in-out;
         margin-left: -7px;
         cursor: pointer;
+        a{
+          text-decoration: none;
+          color: white;
+        }
         &:hover {
           transform: scale(1.1);
           transition: 0.3s ease-in-out;
@@ -562,4 +566,5 @@
 @import "_contact.scss";
 @import "_gallery.scss";
 @import "_catalog.scss";
+@import "_productdetail.scss";
 @import "_responsive.scss";
