@@ -1,5 +1,10 @@
 const perevod = {
     en: {
+      li1: "Directory",
+      li2: "Gallery",
+      li3: "About Us",
+      li4: "Feedback",
+      li5: "Contact",
       divan: "Cassette Sofa",
       reng : "Colors",
       olcu : "Measure and Weight",
@@ -25,6 +30,11 @@ const perevod = {
       privacyTermsMap : "Privacy · Terms · Map",
     },
     aze: {
+      li1: "Kataloq",
+      li2: "Qalereya",
+      li3: "Haqqımızda",
+      li4: "Rəylər",
+      li5: "Əlaqə",
       divan: "Cassette Divan",
       reng : "Rənglər",
       olcu : "Ölçü və Çəki",
@@ -50,6 +60,11 @@ const perevod = {
       privacyTermsMap : "Gizlilik · Şərtlər · Xəritə"
     },
     ru: {
+      li1: "Каталог",
+      li2: "Галерея",
+      li3: "О нас",
+      li4: "Отзыв",
+      li5: "Контакт",
       divan: "Кассетный диван",
       reng : "Цвета",
       olcu : "Мера и вес",

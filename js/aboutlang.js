@@ -1,5 +1,10 @@
 const translatio = {
     en: {
+        li1: "Directory",
+        li2: "Gallery",
+        li3: "About Us",
+        li4: "Feedback",
+        li5: "Contact",
         who : "Who are we?",
         il : "year with you",
         daim : "regular customer",
@@ -30,6 +35,11 @@ const translatio = {
         privacyTermsMap : "Privacy · Terms · Map",
     },
     aze: {
+      li1: "Kataloq",
+      li2: "Qalereya",
+      li3: "Haqqımızda",
+      li4: "Rəylər",
+      li5: "Əlaqə",
       who : "Biz kimik?",
       il : "il sizinlə",
       daim : "daimi müştəri",
@@ -60,6 +70,11 @@ const translatio = {
       privacyTermsMap : "Gizlilik · Şərtlər · Xəritə"
     },
     ru: {
+        li1: "Каталог",
+        li2: "Галерея",
+        li3: "О нас",
+        li4: "Отзыв",
+        li5: "Контакт",
         who : "Кто мы?",
         il : "постоянный клиент",
         daim : "готовая мебель",

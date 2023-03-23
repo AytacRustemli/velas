@@ -12,10 +12,10 @@
     top: 25%;
     left: 0;
     right: 0;
-    background-color: rgba(2, 22, 55, 0.64);
+    background-color: black;
     display: none;
     z-index: 1111111;
-    // height: 50vh;
+    // height: 100%;
     ul {
       display: flex;
       flex-direction: column;
@@ -48,7 +48,7 @@
         width: 104px;
       }
       &.img3 {
-        width: 130px;
+        width: 120px;
       }
     }
   }
@@ -87,7 +87,7 @@
   #collection{
     .boxes{
       margin-top: 10px;
-      width: 360px;
+      width: 100%;
     }
   }
   #reviews{

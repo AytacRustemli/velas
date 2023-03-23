@@ -61,6 +61,21 @@ function changeLanguage(language) {
   const textMoreEl = textEl.querySelector("button");
   textMoreEl.textContent = translations[language].catalog;
 
+  const li1El = document.querySelector("#header .navbar ul li a:first-of-type");
+  li1El.textContent = translations[language].li1;
+
+  const li2El = document.querySelectorAll("#header .navbar ul li a")[1];
+  li2El.textContent = translations[language].li2;
+
+  const li3El = document.querySelectorAll("#header .navbar ul li a")[2];
+  li3El.textContent = translations[language].li3;
+
+  const li4El = document.querySelectorAll("#header .navbar ul li a")[3];
+  li4El.textContent = translations[language].li4;
+
+  const li5El = document.querySelectorAll("#header .navbar ul li a")[4];
+  li5El.textContent = translations[language].li5;
+
   const bestEl = document.querySelector("#best-sellers");
   bestEl.lang = language;
   const bestTextEl = bestEl.querySelector("h4");
@@ -136,6 +151,21 @@ languageLinks.forEach((link) => {
 
 function changeeLanguage(language) {
   // aboutlang
+  const li1El = document.querySelector("#headeer .navbar ul li a:first-of-type");
+  li1El.textContent = translatio[language].li1;
+
+  const li2El = document.querySelectorAll("#headeer .navbar ul li a")[1];
+  li2El.textContent = translatio[language].li2;
+
+  const li3El = document.querySelectorAll("#headeer .navbar ul li a")[2];
+  li3El.textContent = translatio[language].li3;
+
+  const li4El = document.querySelectorAll("#headeer .navbar ul li a")[3];
+  li4El.textContent = translatio[language].li4;
+
+  const li5El = document.querySelectorAll("#headeer .navbar ul li a")[4];
+  li5El.textContent = translatio[language].li5;
+
   const whoEl = document.querySelector("#who_we_are");
   whoEl.lang = language;
   const whoTextEl = whoEl.querySelector("h4");
@@ -231,6 +261,21 @@ languageeLinks.forEach((link) => {
 
 function changgeLanguage(language) {
   // contactlang
+  const li1El = document.querySelector("#headerr .navbar ul li a:first-of-type");
+  li1El.textContent = tercume[language].li1;
+
+  const li2El = document.querySelectorAll("#headerr .navbar ul li a")[1];
+  li2El.textContent = tercume[language].li2;
+
+  const li3El = document.querySelectorAll("#headerr .navbar ul li a")[2];
+  li3El.textContent = tercume[language].li3;
+
+  const li4El = document.querySelectorAll("#headerr .navbar ul li a")[3];
+  li4El.textContent = tercume[language].li4;
+
+  const li5El = document.querySelectorAll("#headerr .navbar ul li a")[4];
+  li5El.textContent = tercume[language].li5;
+
   const contacEl = document.querySelector("#contactus");
   contacEl.lang = language;
   const contacTextEl = contacEl.querySelector("h4");
@@ -276,6 +321,21 @@ languaggeLinks.forEach((link) => {
 
 function changegalleryLanguage(language) {
   // gallerylang
+  const li1El = document.querySelector("#headergallery .navbar ul li a:first-of-type");
+  li1El.textContent = tercuume[language].li1;
+
+  const li2El = document.querySelectorAll("#headergallery .navbar ul li a")[1];
+  li2El.textContent = tercuume[language].li2;
+
+  const li3El = document.querySelectorAll("#headergallery .navbar ul li a")[2];
+  li3El.textContent = tercuume[language].li3;
+
+  const li4El = document.querySelectorAll("#headergallery .navbar ul li a")[3];
+  li4El.textContent = tercuume[language].li4;
+
+  const li5El = document.querySelectorAll("#headergallery .navbar ul li a")[4];
+  li5El.textContent = tercuume[language].li5;
+
   const galleryEl = document.querySelector("#buttons")
   const hamisiEl = galleryEl.querySelectorAll("button");
   hamisiEl[0].textContent = tercuume[language].hamisi;
@@ -319,6 +379,21 @@ languagegalleryLinks.forEach((link) => {
 
 function changecatalogLanguage(language) {
   // cataloglang
+  const li1El = document.querySelector("#headercatalog .navbar ul li a:first-of-type");
+  li1El.textContent = tercumet[language].li1;
+
+  const li2El = document.querySelectorAll("#headercatalog .navbar ul li a")[1];
+  li2El.textContent = tercumet[language].li2;
+
+  const li3El = document.querySelectorAll("#headercatalog .navbar ul li a")[2];
+  li3El.textContent = tercumet[language].li3;
+
+  const li4El = document.querySelectorAll("#headercatalog .navbar ul li a")[3];
+  li4El.textContent = tercumet[language].li4;
+
+  const li5El = document.querySelectorAll("#headercatalog .navbar ul li a")[4];
+  li5El.textContent = tercumet[language].li5;
+
   const abouttEl = document.querySelector("#footer h4:first-of-type");
   abouttEl.textContent = tercumet[language].about;
   const aboutListEls = document.querySelectorAll("#footer ul:first-of-type li");
@@ -355,6 +430,21 @@ languagecatalogLinks.forEach((link) => {
 
 function changeproductdetailLanguage(language) {
   // productdetaillang
+  const li1El = document.querySelector("#headerdetail .navbar ul li a:first-of-type");
+  li1El.textContent = perevod[language].li1;
+
+  const li2El = document.querySelectorAll("#headerdetail .navbar ul li a")[1];
+  li2El.textContent = perevod[language].li2;
+
+  const li3El = document.querySelectorAll("#headerdetail .navbar ul li a")[2];
+  li3El.textContent = perevod[language].li3;
+
+  const li4El = document.querySelectorAll("#headerdetail .navbar ul li a")[3];
+  li4El.textContent = perevod[language].li4;
+
+  const li5El = document.querySelectorAll("#headerdetail .navbar ul li a")[4];
+  li5El.textContent = perevod[language].li5;
+
   const detailEl = document.querySelector("#detail");
   detailEl.lang = language;
   const detailTextEl = detailEl.querySelector("h4");

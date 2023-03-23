@@ -1,5 +1,10 @@
 const tercume = {
     en: {
+        li1: "Directory",
+        li2: "Gallery",
+        li3: "About Us",
+        li4: "Feedback",
+        li5: "Contact",
         who : "Contact us",
         izle : "Follow us",
         gonder : "Send",
@@ -17,6 +22,11 @@ const tercume = {
         privacyTermsMap : "Privacy · Terms · Map",
     },
     aze: {
+      li1: "Kataloq",
+      li2: "Qalereya",
+      li3: "Haqqımızda",
+      li4: "Rəylər",
+      li5: "Əlaqə",
       who : "Bizimlə əlaqə",
       izle : "Bizi izləyin",
       gonder : "Göndər",
@@ -34,6 +44,11 @@ const tercume = {
       privacyTermsMap : "Gizlilik · Şərtlər · Xəritə"
     },
     ru: {
+        li1: "Каталог",
+        li2: "Галерея",
+        li3: "О нас",
+        li4: "Отзыв",
+        li5: "Контакт",
         who : "Связаться с нами",
         izle : "Подписывайтесь на нас",
         gonder : "Отправить",
